@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Barcode</th>
+      <th scope="col">Description</th>
+      <th scope="col">SKU</th>
+      <th scope="col">EXGST</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+  {% for row in rows %}
+
+    <tr>
+      <td>{{row.name}}</td>
+      <td>{{row.barcode}}</td>
+      <td>{{row.description}}</td>
+      <td>{{row.sku}}</td>
+      <td>{{row.exgst}}</td>
+
+    </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+{% endblock %}

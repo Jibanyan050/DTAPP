@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Item ID</th>
+      <th scope="col"> User ID </th>
+      <th scope="col">Date</th>
+      
+
+
+    </tr>
+  </thead>
+  <tbody>
+  {% for row in rows %}
+
+    <tr>
+      <td>{{row.Item ID}}</td>
+      <td>{{row.User ID}}</td>
+      <td>{{row.Date}}</td>
+     
+
+    </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+{% endblock %}
